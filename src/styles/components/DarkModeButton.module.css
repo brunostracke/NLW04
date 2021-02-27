@@ -1,0 +1,48 @@
+.container {
+  background: transparent;
+  width: 4rem;
+  height: 4rem;
+  
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  
+
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+.bar {
+  height: 2rem;
+  width: 100%;
+  background: #3b3b3b;
+  border-radius: 25px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.circleLeft{
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 25px;
+  background: #878686;
+  border: 0;
+  position: absolute;
+  left: 0;
+  margin-left: 0.2rem;
+}
+
+.circleRight{
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 25px;
+  background: #878686;
+  border: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 0.2rem;
+}

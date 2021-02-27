@@ -15,3 +15,18 @@
     align-content: center;
 }
 
+.darkMode {
+  --white: rgb(39, 39, 39);
+  --background: #3b3b3b;
+  --gray-line: #878686;
+  --text: #c7c4c4;
+  --text-highlight: #b3b9ff;
+  --title: #5b72a2;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+
+  background: black;
+}

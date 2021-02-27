@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { ChallengeBox } from "../components/ChallengeBox";
 import { CoundownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from '../contexts/ChallengesContext'
+import { DarkModeButton } from "../components/DarkModeButton";
 
 interface HomeProps {
   level: number,
@@ -16,12 +17,15 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+
   return (
+    
     <ChallengesProvider 
-    level={props.level}
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
     >
+    <DarkModeButton />
       <div className={styles.container}>
         <Head>
           <title>Início | move.it</title>
@@ -43,7 +47,9 @@ export default function Home(props: HomeProps) {
         </CoundownProvider>
 
       </div>
+    
     </ChallengesProvider>
+    
   )
 }
 
